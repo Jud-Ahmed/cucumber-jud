@@ -1,0 +1,15 @@
+
+feature ; user log in value
+
+scenario: 
+
+
+
+
+      | Admin           |
+      | PIM             |
+      | My Info         |
+      | Discipline      |
+      | Reports Catalog |
+      | More            |
+      | Maintenance     |

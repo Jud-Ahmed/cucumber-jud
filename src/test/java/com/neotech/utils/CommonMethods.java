@@ -247,6 +247,21 @@ public class CommonMethods extends PageInitializer {
 	public static WebElement waitForVisibility(By locator) {
 		return getWaitObject().until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
+	
+	/**
+	 * This method will wait for the element to be visible.
+	 * 
+	 * @param element
+	 */
+	public static WebElement waitForVisibility(WebElement element) {
+		return getWaitObject().until(ExpectedConditions.visibilityOf(element));
+	}
+
+
+
+
+
+
 
 	/**
 	 * This method will wait for the element to be clickable.
