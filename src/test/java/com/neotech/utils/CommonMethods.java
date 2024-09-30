@@ -257,12 +257,6 @@ public class CommonMethods extends PageInitializer {
 		return getWaitObject().until(ExpectedConditions.visibilityOf(element));
 	}
 
-
-
-
-
-
-
 	/**
 	 * This method will wait for the element to be clickable.
 	 * 
@@ -401,5 +395,26 @@ public class CommonMethods extends PageInitializer {
 		
 		return sdf.format(date);
 	}
+	
+	
+	/**
+	 * This method is another substitute for selectDropdown(). It gets a list of WebElements and
+	 * a string value to click on the particular element containing the value.
+	 * 
+	 * @param list
+	 * @param value
+	 */
+	public void clickOnElement(List<WebElement> list, String value)
+	{
+		for (WebElement option : list)
+		{
+			if (option.getText().equals(value))
+			{
+				click(option);
+				break;
+			}
+		}
+	}
+	
 
 }
